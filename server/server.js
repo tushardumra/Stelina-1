@@ -17,7 +17,7 @@ const app = express();
 
 // app.use(cors());
 app.use(cors({
-  origin: "https://stelina-1.vercel.app",
+  origin: "https://stelina-1-xeyx.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
