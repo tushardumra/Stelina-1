@@ -10,8 +10,7 @@ yarn-debug.log*
 pnpm-debug.log*
 
 # build folders
-build/
-dist/
+
 
 # # React build output
 # client/buil
