@@ -21,7 +21,7 @@ export const ShoppingCart = () => {
   const showCartList = async () => {
     try {
       const useApi = await fetch(
-        `https://stelina-backend.onrender.com/api/shoppingCartProducts/${uId}`,
+        `https://stelina-1-backend.onrender.com/api/shoppingCartProducts/${uId}`,
         {
           method: "Get",
         },
@@ -64,7 +64,7 @@ export const ShoppingCart = () => {
 
   const removeItem = async (id) => {
     try {
-      const useApi = await fetch(`https://stelina-backend.onrender.com/api/deleteItem/${id}`, {
+      const useApi = await fetch(`https://stelina-1-backend.onrender.com/api/deleteItem/${id}`, {
         method: "Delete",
       });
 
@@ -104,7 +104,7 @@ export const ShoppingCart = () => {
   const updateAllCartQty = async () => {
     try {
       const useApi = await fetch(
-        `https://stelina-backend.onrender.com/api/cart/update-all/${userid}`,
+        `https://stelina-1-backend.onrender.com/api/cart/update-all/${userid}`,
         {
           method: "PUT",
           headers: {

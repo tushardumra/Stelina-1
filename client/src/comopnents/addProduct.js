@@ -33,7 +33,7 @@ export const AddProduct = () => {
   }, []);
 
   const cateInList = async () => {
-    const useApi = await fetch("https://stelina-backend.onrender.com/api/getCategories", {
+    const useApi = await fetch("https://stelina-1-backend.onrender.com/api/getCategories", {
       method: "Get",
     });
 
@@ -65,7 +65,7 @@ export const AddProduct = () => {
 
       try {
         const useApi = await fetch(
-          `https://stelina-backend.onrender.com/api/update-product/${prodId}`,
+          `https://stelina-1-backend.onrender.com/api/update-product/${prodId}`,
           {
             method: "Put",
             body: UpProductInfo,
@@ -109,7 +109,7 @@ export const AddProduct = () => {
       }
 
       try {
-        const useApi = await fetch("https://stelina-backend.onrender.com/api/uploadProducts", {
+        const useApi = await fetch("https://stelina-1-backend.onrender.com/api/uploadProducts", {
           method: "Post",
           body: productInfo,
         });
@@ -130,7 +130,7 @@ export const AddProduct = () => {
 
   const showProducts = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/getProducts");
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/getProducts");
 
       const resp = await useApi.json();
       console.log(resp);
@@ -157,7 +157,7 @@ export const AddProduct = () => {
   };
 
   const deleteProd = async (id) => {
-    const useApi = await fetch(`https://stelina-backend.onrender.com/api/deleteProd/${id}`, {
+    const useApi = await fetch(`https://stelina-1-backend.onrender.com/api/deleteProd/${id}`, {
       method: "Delete",
     });
 

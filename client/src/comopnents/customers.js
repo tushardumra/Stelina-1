@@ -28,7 +28,7 @@ export const Customers = () => {
 
   const ShowCustInfo = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/customers-info", {
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/customers-info", {
         method: "Get",
       });
 
@@ -60,7 +60,7 @@ export const Customers = () => {
   const toggleCustomerStatus = async (customer, tableType, index) => {
   try {
     const res = await fetch(
-      `https://stelina-backend.onrender.com/api/toggle-customer-status/${customer._id}`,
+      `https://stelina-1-backend.onrender.com/api/toggle-customer-status/${customer._id}`,
       { method: "PUT" }
     );
 

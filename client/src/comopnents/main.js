@@ -20,7 +20,7 @@ export const MainPage = () => {
 
   const showSaleItems = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/products-onSale");
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/products-onSale");
       if(useApi.ok) {
         const resp = await useApi.json();
         if(resp.statuscode === 1) {
@@ -36,7 +36,7 @@ export const MainPage = () => {
 
   const showCategories = async () => {
     try {
-      const res = await fetch("https://stelina-backend.onrender.com/api/getall");
+      const res = await fetch("https://stelina-1-backend.onrender.com/api/getall");
       const data = await res.json();
       // alert(data)
       if (data.statuscode === 1) {
@@ -53,7 +53,7 @@ export const MainPage = () => {
 
   const latestProducts = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/latestProducts");
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/latestProducts");
       const resp = await useApi.json();
 
       if (resp.statuscode === 1) {

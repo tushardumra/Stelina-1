@@ -23,7 +23,7 @@ export const ProductsList = () => {
   const showWishList = async () => {
     try {
       const useApi = await fetch(
-        `https://stelina-backend.onrender.com/api/wishlistProducts/${uId}`,
+        `https://stelina-1-backend.onrender.com/api/wishlistProducts/${uId}`,
         {
           method: "Get",
         },
@@ -52,7 +52,7 @@ export const ProductsList = () => {
     console.log(id);
     try {
       const useApi = await fetch(
-        `https://stelina-backend.onrender.com/api/removefromWishlist/${id}`,
+        `https://stelina-1-backend.onrender.com/api/removefromWishlist/${id}`,
         {
           method: "Delete",
         },

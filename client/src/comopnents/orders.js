@@ -9,7 +9,7 @@ export const Orders = () => {
 
   const ShowOrdersData = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/customers-orders", {
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/customers-orders", {
         method: "Get",
       });
       if (useApi.ok) {

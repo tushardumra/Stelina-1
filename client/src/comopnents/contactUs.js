@@ -26,7 +26,7 @@ export const ContactUs = () => {
     e.preventDefault();
     const custinfo = {name, mail, phone, country, msg};
 
-    const useApi = await fetch("https://stelina-backend.onrender.com/api/contact", {
+    const useApi = await fetch("https://stelina-1-backend.onrender.com/api/contact", {
       method: "Post",
       body: JSON.stringify(custinfo),
       headers: {

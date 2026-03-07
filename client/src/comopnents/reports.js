@@ -35,7 +35,7 @@ export const Reports = () => {
 
   const fetchCustomers = async () => {
     try {
-      const res = await fetch("https://stelina-backend.onrender.com/api/customers-info");
+      const res = await fetch("https://stelina-1-backend.onrender.com/api/customers-info");
       const resp = await res.json();
 
       if (resp.statuscode === 1) {

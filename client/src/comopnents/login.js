@@ -13,7 +13,7 @@ export const LoginPage = () => {
   const login = async (e) => {
     e.preventDefault();
     const userinfo = { mail, pwd };
-    const useApi = await fetch("https://stelina-backend.onrender.com/api/login", {
+    const useApi = await fetch("https://stelina-1-backend.onrender.com/api/login", {
       method: "Post",
       body: JSON.stringify(userinfo),
       headers: {

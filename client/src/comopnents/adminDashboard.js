@@ -72,7 +72,7 @@ export const AdminDashboard = () => {
 
   const fetchCustomers = async () => {
     try {
-      const res = await fetch("https://stelina-backend.onrender.com/api/customers-info");
+      const res = await fetch("https://stelina-1-backend.onrender.com/api/customers-info");
       const resp = await res.json();
 
       if (resp.statuscode === 1) {
@@ -146,7 +146,7 @@ export const AdminDashboard = () => {
   // ------------ Total Products and Category -----------
   const fetchCategories = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/category-count", {
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/category-count", {
         method: "Get",
       });
       if (useApi.ok) {
@@ -164,7 +164,7 @@ export const AdminDashboard = () => {
 
   const fetchProducts = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/products-count", {
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/products-count", {
         method: "Get",
       });
       if (useApi.ok) {
@@ -253,7 +253,7 @@ export const AdminDashboard = () => {
   // --------- Payment Type Distribution Chart ---------
   const fetchPayType = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/paytype", {
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/paytype", {
         method: "Get",
       });
       if (useApi.ok) {
@@ -300,7 +300,7 @@ export const AdminDashboard = () => {
   // --------- Orders Over Time Chart --------------
   const fetchOrders = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/orders-over-time", {
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/orders-over-time", {
         method: "Get",
       });
       if (useApi.ok) {

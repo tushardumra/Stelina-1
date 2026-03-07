@@ -86,7 +86,7 @@ function App() {
 
 //     if (!token) return;
 
-//     const res = await fetch("https://stelina-backend.onrender.com/api/verify-session", {
+//     const res = await fetch("https://stelina-1-backend.onrender.com/api/verify-session", {
 //       headers: {
 //         Authorization: `Bearer ${JSON.parse(token)}`
 //       }

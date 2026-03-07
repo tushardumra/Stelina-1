@@ -33,7 +33,7 @@ export const ProductDetails = () => {
   
   const showProdDetails = async () => {
     try {
-      const useApi = await fetch(`https://stelina-backend.onrender.com/api/productDetails/${pId}`);
+      const useApi = await fetch(`https://stelina-1-backend.onrender.com/api/productDetails/${pId}`);
 
       const resp = await useApi.json();
       if(resp.statuscode === 1) {
@@ -57,7 +57,7 @@ export const ProductDetails = () => {
     try {
       const productData = {prodName, prodPrice, prodDesc, prodImg, userid, pId};
 
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/saveInWishlist", {
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/saveInWishlist", {
         method: "Post",
         body: JSON.stringify(productData),
         headers: {
@@ -95,7 +95,7 @@ export const ProductDetails = () => {
     try {
       const productData = {prodName, prodPrice, prodQty, prodImg, userid, pId};
 
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/addInShoppingCart", {
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/addInShoppingCart", {
         method: "Post",
         body: JSON.stringify(productData),
         headers: {
@@ -122,7 +122,7 @@ export const ProductDetails = () => {
     try {
       console.log("product by category working")
       
-      const useApi = await fetch(`https://stelina-backend.onrender.com/api/productsList/${cId}`);
+      const useApi = await fetch(`https://stelina-1-backend.onrender.com/api/productsList/${cId}`);
 
       const resp = await useApi.json();
       if(resp.statuscode === 1) {

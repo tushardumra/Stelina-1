@@ -37,7 +37,7 @@ export const AddCategory = () => {
       }
 
       try {
-        const useApi = await fetch(`https://stelina-backend.onrender.com/api/update-category/${catId}`, {
+        const useApi = await fetch(`https://stelina-1-backend.onrender.com/api/update-category/${catId}`, {
           method: "Put",
           body: formData,
         });
@@ -64,7 +64,7 @@ export const AddCategory = () => {
 
       try {
         const useApi = await fetch(
-          "https://stelina-backend.onrender.com/api/uploadCategories",
+          "https://stelina-1-backend.onrender.com/api/uploadCategories",
           {
             method: "POST",
             body: formData,
@@ -93,7 +93,7 @@ export const AddCategory = () => {
 
   const showCategories = async () => {
     try {
-      const useApi = await fetch("https://stelina-backend.onrender.com/api/getall");
+      const useApi = await fetch("https://stelina-1-backend.onrender.com/api/getall");
 
       if(useApi.ok){
       const resp = await useApi.json();
@@ -112,7 +112,7 @@ export const AddCategory = () => {
   };
 
   const deleteCateg = async (id) => {
-    const useApi = await fetch(`https://stelina-backend.onrender.com/api/deleteCate/${id}`, {
+    const useApi = await fetch(`https://stelina-1-backend.onrender.com/api/deleteCate/${id}`, {
       method: "Delete",
     });
 
