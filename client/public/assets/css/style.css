@@ -32,6 +32,16 @@ Input, textarea: 14px/24px Jost, sans-serif;
 SLIDESHOW
 REPONSIVE
 /*-------------------------*/
+/* Global Fix for the Mobile View */
+/*-------------------------*/
+* {
+  box-sizing: border-box;
+}
+html,body {
+  width: 100%;
+  overflow-x: hidden
+}
+
 /*==========================================================================
   1.0 COMPONENT STYLES
 ============================================================================ */
