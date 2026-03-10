@@ -184,7 +184,7 @@ export const Footer = () => {
               <Link to="/login">
                 <span className="icon">
                   <i className="fa fa-shopping-basket" aria-hidden="true"></i>
-                  <span className="count-icon">0</span>
+                  {/* <span className="count-icon">0</span> */}
                 </span>
                 <span className="text">Cart</span>
               </Link>
