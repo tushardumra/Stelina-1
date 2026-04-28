@@ -136,13 +136,16 @@ export const Header = () => {
                             <img
                               src="/assets/images/bag.png"
                               alt="shopping-bag-icon"
-                            />
+                              title="shopping-bag"
+                              />
+                            
                           </Link>
                           {/* <span className="item-count">0</span> */}
                           <Link to={`/wishlist?id=${userid}`}>
                             <img
                               src="/assets/images/e-commerce.png"
                               alt="wishlist-icon"
+                              title="wishlist"
                             />
                           </Link>
                         </>
