@@ -247,7 +247,7 @@ export const AdminPage2 = () => {
               </div>
             </div> */}
           <p className="copyright">
-            Cash Market
+            Stelina
             <br />
             All rights reserved
           </p>
