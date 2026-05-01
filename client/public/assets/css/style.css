@@ -540,7 +540,7 @@ th, td {
   /* background-color: lightcyan; */
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 70px;
   padding-bottom: 50px;
   justify-content: center;
 }
